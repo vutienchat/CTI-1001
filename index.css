@@ -1,0 +1,154 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.phone {
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+  height: 500px;
+}
+/* start css dialer */
+
+.dialer {
+  padding: 20px;
+}
+
+.dialer-screen {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.input {
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.dialer-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dialer-btn-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialer-btn {
+  background-color: #efefef;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialer-btn:hover {
+  background-color: #aaa7a7;
+}
+
+.call-btn {
+  grid-column: span 3;
+  margin-top: 20px;
+}
+
+/* end css dialer */
+
+/* start  css out-bound-screen  */
+
+.out-bound-screen-wrapper {
+  display: none;
+  height: 100%;
+}
+
+.out-bound-screen {
+  height: calc(100% - 80px);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.outbound-controls {
+  display: flex;
+  justify-items: center;
+}
+
+.incoming-screen {
+  display: none;
+  height: calc(100% - 80px);
+  padding: 40px;
+}
+
+.incoming {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  justify-content: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caller-info {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.caller-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.phone-number {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.call-controls {
+  display: flex;
+  gap: 50px;
+  /* margin-bottom: 30px; */
+}
+
+.control-icon {
+  cursor: pointer;
+}
+
+.control-icon img {
+  width: 50px;
+  height: 50px;
+}

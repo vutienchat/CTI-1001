@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="js/ancti.js"></script>
+  </head>
+  <body>
+    <video
+      id="localView"
+      playsinline
+      autoplay
+      muted
+      style="display: none"
+    ></video>
+    <video
+      id="remoteView"
+      playsinline
+      autoplay
+      muted
+      style="display: none"
+    ></video>
+    <div class="phone">
+      <div class="screen out-bound-screen-wrapper">
+        <div class="out-bound-screen">
+          <div>
+            <div class="avatar">
+              <img
+                src="http://210.245.85.229:9967/Images/AvatarUsers/0ba5f6be-4199-4b27-9609-c206c21faa0b_irene.jpg"
+                alt="Avatar"
+              />
+            </div>
+            <div class="caller-info">
+              <div class="caller-name">John Doe</div>
+              <div class="phone-number">+123456789</div>
+            </div>
+          </div>
+          <div class="outbound-controls" id="end-call-btn">
+            <div class="control-icon">
+              <img
+                src="https://cdn-icons-png.freepik.com/256/9946/9946316.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen dialer">
+        <div class="dialer-screen">
+          <div class="input" id="displayPhoneNumber"></div>
+        </div>
+        <div class="dialer-buttons">
+          <div class="dialer-btn-item">
+            <button class="dialer-btn">1</button>
+          </div>
+          <div class="dialer-btn-item">
+            <button class="dialer-btn">2</button>
+          </div>
+          <div class="dialer-btn-item">
+            <button class="dialer-btn">3</button>
+          </div>
+          <div class="dialer-btn-item">
+            <button class="dialer-btn">4</button>
+          </div>
+          <div class="dialer-btn-item">
+            <button class="dialer-btn">5</button>
+          </div>
+          <div class="dialer-btn-item">
+            <button class="dialer-btn">6</button>
+          </div>
+          <div class="dialer-btn-item">
+            <button class="dialer-btn">7</button>
+          </div>
+          <div class="dialer-btn-item">
+            <button class="dialer-btn">8</button>
+          </div>
+          <div class="dialer-btn-item">
+            <button class="dialer-btn">9</button>
+          </div>
+          <div class="dialer-btn-item">
+            <button class="dialer-btn">*</button>
+          </div>
+          <div class="dialer-btn-item">
+            <button class="dialer-btn">0</button>
+          </div>
+          <div class="dialer-btn-item">
+            <button class="dialer-btn">#</button>
+          </div>
+          <div class="dialer-btn-item call-btn" id="call-btn">
+            <div class="control-icon" id="dialer-btn-make-call">
+              <img
+                src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/accept-call-icon.png"
+                alt="Speaker Icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen incoming-screen">
+        <div class="incoming">
+          <div class="avatar">
+            <img
+              src="http://210.245.85.229:9967/Images/AvatarUsers/0ba5f6be-4199-4b27-9609-c206c21faa0b_irene.jpg"
+              alt="Avatar"
+            />
+          </div>
+          <div class="caller-info">
+            <div class="caller-name">John Doe</div>
+            <div class="phone-number">+123456789</div>
+          </div>
+          <div class="call-controls">
+            <div class="control-icon">
+              <img
+                src="https://cdn-icons-png.freepik.com/256/9946/9946316.png"
+                alt=""
+              />
+            </div>
+            <div class="control-icon reject-icon" id="accept-call-btn">
+              <img
+                src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/accept-call-icon.png"
+                alt="Speaker Icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
