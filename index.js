@@ -53,7 +53,7 @@ agent.on("applicationsessionstarted", (event) => {
 });
 
 agent.on("localstream", (event) => {
-  document.getElementById("localView").srcObject = event.stream;
+  // document.getElementById("localView").srcObject = event.stream;
 });
 agent.on("WSS", (event) => {
   console.log("WS", event.message);
