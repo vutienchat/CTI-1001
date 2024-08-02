@@ -60,8 +60,8 @@ agent.on("WSS", (event) => {
 });
 
 agent.on("remotestream", (event) => {
-  document.getElementById("remoteView").srcObject = event.stream;
-  audio.srcObject = event.stream;
+  // document.getElementById("remoteView").srcObject = event.stream;
+  // audio.srcObject = event.stream;
 });
 navigator.mediaDevices.enumerateDevices().then((mediaDevices) => {
   console.log({ mediaDevices });
